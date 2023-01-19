@@ -2,16 +2,14 @@ import React from "react";
 import TypographyHeading from "../common/TypographyHeading";
 import Project from "./Project";
 
-const projects: [
-  {
-    title: string;
-    description: string;
-    websiteLink: string;
-    githubLink: string;
-    image1: string;
-    image2: string;
-  }
-] = [
+const projects: {
+  title: string;
+  description: string;
+  websiteLink: string;
+  githubLink: string;
+  image1: string;
+  image2: string;
+}[] = [
   {
     title: "zorin os",
     description: " A clone for zorin os website using reactJs and tailwindcss ",
@@ -37,6 +35,15 @@ const projects: [
     githubLink: "https://github.com/Mohamed-Echbiy/animo-tima-v2",
     image1: "./AnimoTime1.png",
     image2: "./AnimoTime2.png",
+  },
+  {
+    title: "EVOGYM",
+    description:
+      "EVOGYM is a gym landing page built using TypeScript with reactJs, styled with tailwindcss and animated using framer-motion.",
+    websiteLink: "https://evogym-plum.vercel.app/",
+    githubLink: "https://github.com/Mohamed-Echbiy/evogym",
+    image1: "./EVOGYM1.png",
+    image2: "./EVOGYM2.png",
   },
 ];
 

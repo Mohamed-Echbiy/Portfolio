@@ -1,5 +1,6 @@
 import { Code, Language } from "@mui/icons-material";
 import React from "react";
+import Button from "../common/Button";
 import TypographyParagraphs from "../common/TypographyParagraphs";
 import TypographySubHeading from "../common/TypographySubHeading";
 
@@ -30,26 +31,20 @@ export default function Project({
           <p>{description}</p>
         </TypographyParagraphs>
       </div>
-      <div className="links flex justify-start items-center">
+      <div className="links flex justify-start items-center pl-4">
         <a
           href={websiteLink}
           target="_blank"
           className="flex justify-center items-center font-semibold gap-2"
         >
-          <span>Live</span>
-          <span>
-            <Language />
-          </span>
+          <Button text="Live" icon={<Language />} />
         </a>
         <a
           href={githubLink}
           target="_blank"
           className="ml-5 flex justify-center items-center font-semibold gap-2"
         >
-          <span>Code</span>
-          <span>
-            <Code />
-          </span>
+          <Button text="Code" icon={<Code />} />
         </a>
       </div>
       <div className="image-box flex flex-col justify-center py-12 mx-auto min-h-fit overflow-y-hidden w-full mb-24">
@@ -57,9 +52,9 @@ export default function Project({
           href={websiteLink}
           target="_blank"
           title={`go to ${title}`}
-          className="flex gap-1 max-w-7xl mx-auto px-4"
+          className="flex gap-1 max-w-7xl mx-auto px-4 drop-shadow-2xl"
         >
-          <div className="w-2/5 min-h-full max-h-imageHeight lg:max-h-fit flex-grow">
+          <div className="w-2/5 min-h-full max-h-image-sm md:max-h-fit flex-grow">
             <img
               src={image1}
               alt="project image"

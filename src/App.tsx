@@ -3,6 +3,7 @@ import Box from "./components/common/Box";
 import TypographyHeading from "./components/common/TypographyHeading";
 import TypographyParagraphs from "./components/common/TypographyParagraphs";
 import TypographySubHeading from "./components/common/TypographySubHeading";
+import Form from "./components/Form/Form";
 import Herosection from "./components/Herosection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects/Projects";
@@ -43,6 +44,7 @@ function App() {
       </section>
       <Skills />
       <Projects />
+      <Form />
     </div>
   );
 }
