@@ -63,7 +63,7 @@ export default function Form() {
   }
   return (
     <section
-      className="flex flex-col-reverse md:flex-row justify-center items-center w-full mb-6"
+      className="flex flex-col-reverse md:flex-row justify-center px-4 items-center w-full mb-6"
       id="contact"
     >
       <div className="image-container max-w-lg w-1/2 hidden md:block">

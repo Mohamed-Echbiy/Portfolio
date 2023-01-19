@@ -24,14 +24,14 @@ export default function Skills() {
   }, [control, inView]);
   return (
     <motion.section
-      className="Skills-sections relative h-screen overflow-y-hidden my-12 md:my-24 "
+      className="Skills-sections relative h-[300px] md:h-[400px] lg:h-[100vh] overflow-y-hidden my-12 lg:my-24 "
       id="skills"
       ref={ref}
       variants={boxVariant}
       initial="hidden"
       animate={control}
     >
-      <div className="h-full bg-[url('/Skills.png')] bg-repeat-y bg-center animateBg bg-contain absolute top-0 left-0 w-full"></div>
+      <div className="h-full w-full bg-[url('/Skills.png')] bg-no-repeat bg-center animateBg bg-contain  "></div>
       {/* <div className="skill-image  w-full max-w-full">
         <img
           src="./skills-section.png"

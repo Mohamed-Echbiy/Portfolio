@@ -34,10 +34,10 @@
   -o-transition: 0.2s linear;
 }
 .animateBg {
-  animation: infinite bgMOving 70s linear;
-  -webkit-animation: infinite bgMOving 70s linear;
+  animation: infinite bgMOving 70s linear both;
+  -webkit-animation: infinite bgMOving 70s linear both;
 }
-@keyframes bgMOving {
+/* @keyframes bgMOving {
   0% {
     transform: translateY(0);
   }
@@ -49,4 +49,4 @@
     -ms-transform: translateY(-100vh);
     -o-transform: translateY(-100vh);
   }
-}
+} */

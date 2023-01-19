@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className=" navbar-container py-5 flex items-center justify-around px-4">
       <div className="links-container flex-grow">
         <motion.ul
-          className="links capitalize flex dark:text-white justify-center gap-6 font-semibold text-sm md:text-base"
+          className="links capitalize flex dark:text-white justify-center gap-6 font-semibold text-xs md:text-base"
           initial={{ y: "-100vh" }}
           animate={{ y: 0 }}
           transition={{ delay: 0.1, type: "spring", stiffness: 40 }}
