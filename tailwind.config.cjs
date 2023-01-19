@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         bgDark: "url('./src/assets/HeroBgDark.png')",
-        bgLight: "url('./src/assets/HeroBgLight.png')",
+        bgLight: "url('./HeroBgLight.png')",
       },
       maxWidth: {
         1900: "1920px",
