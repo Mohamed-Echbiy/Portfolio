@@ -31,7 +31,7 @@ export default function Skills() {
       initial="hidden"
       animate={control}
     >
-      <div className="h-[500vh] bg-[url('/Skills.png')] bg-repeat-y bg-center animateBg bg-contain"></div>
+      <div className="h-full bg-[url('/Skills.png')] bg-repeat-y bg-center animateBg bg-contain absolute top-0 left-0 w-full"></div>
       {/* <div className="skill-image  w-full max-w-full">
         <img
           src="./skills-section.png"
