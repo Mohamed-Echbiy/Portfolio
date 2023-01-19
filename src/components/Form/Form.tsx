@@ -62,7 +62,10 @@ export default function Form() {
     }
   }
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full ">
+    <section
+      className="flex flex-col-reverse md:flex-row justify-center items-center w-full "
+      id="contact"
+    >
       <div className="image-container max-w-lg w-1/2">
         <img
           src="./form-image.png"
@@ -99,6 +102,6 @@ export default function Form() {
           <Button text={"submit"} />
         </div>
       </FormControl>
-    </div>
+    </section>
   );
 }

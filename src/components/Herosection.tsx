@@ -6,7 +6,10 @@ import TypographySubHeading from "./common/TypographySubHeading";
 
 export default function Herosection() {
   return (
-    <div className="hero-container h-hero flex flex-col justify-end w-full items-center">
+    <div
+      className="hero-container h-hero flex flex-col justify-end w-full items-center"
+      id="home"
+    >
       <TypographyHeading className="my-name text-center text-primary-900 mb-6">
         <h2 className="my-name-is uppercase">mohamed echbiy</h2>
       </TypographyHeading>
@@ -17,14 +20,17 @@ export default function Herosection() {
         </TypographySubHeading>
       </div>
       <div className="icons-to-contact-me flex gap-2 items-center">
-        <a href="" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/mohamed-echbiy-442aa9244/"
+          target="_blank"
+        >
           <LinkedIn />
         </a>
-        <a href="" target="_blank">
+        <a href="https://github.com/Mohamed-Echbiy" target="_blank">
           <GitHub />
         </a>
         <a
-          href=""
+          href="https://drive.google.com/file/d/1ITJuKI_VTjVIKwvKQz35i0fJ4-uzmaQz/view?usp=share_link"
           target="_blank"
           title="download resume"
           className="sm:hidden"

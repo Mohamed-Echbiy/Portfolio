@@ -49,7 +49,10 @@ const projects: {
 
 export default function Projects() {
   return (
-    <section className="projects min-h-screen px-6 sm:px-10 md:px-12 lg:px-16">
+    <section
+      className="projects min-h-screen px-6 sm:px-10 md:px-12 lg:px-16"
+      id="projects"
+    >
       <TypographyHeading className="pt-12 md:pt-24 mb-6">
         <h4 className="uppercase">Projects</h4>
       </TypographyHeading>
