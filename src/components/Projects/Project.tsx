@@ -1,5 +1,7 @@
 import { Code, Language } from "@mui/icons-material";
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Button from "../common/Button";
 import TypographyParagraphs from "../common/TypographyParagraphs";
 import TypographySubHeading from "../common/TypographySubHeading";
@@ -12,7 +14,14 @@ interface types {
   image1: string;
   image2: string;
 }
-
+const boxVariant = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 1, delay: 0.5 },
+  },
+  hidden: { opacity: 0, scale: 1 },
+};
 export default function Project({
   title,
   description,
@@ -21,8 +30,24 @@ export default function Project({
   image1,
   image2,
 }: types) {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
-    <div className="project flex flex-col">
+    <motion.div
+      className="project flex flex-col"
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <div className="pl-4">
         <TypographySubHeading className=" font-semibold mb-2">
           <h5>{title}</h5>
@@ -70,6 +95,6 @@ export default function Project({
           </div>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
