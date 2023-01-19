@@ -3,12 +3,9 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
+  safelist: [" bgLight"],
   theme: {
     extend: {
-      backgroundImage: {
-        bgDark: "url('./src/assets/HeroBgDark.png')",
-        bgLight: "url('./HeroBgLight.png')",
-      },
       maxWidth: {
         1900: "1920px",
       },
