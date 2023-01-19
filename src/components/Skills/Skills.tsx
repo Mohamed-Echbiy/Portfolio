@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Skills() {
   return (
     <section
@@ -8,7 +6,7 @@ export default function Skills() {
     >
       <div className="skill-image  w-full max-w-full">
         <img
-          src="./skills-section.webp"
+          src="./skills-section.png"
           alt="my list of skills"
           className="w-full"
         />
