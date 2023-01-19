@@ -24,7 +24,7 @@ export default function Skills() {
   }, [control, inView]);
   return (
     <motion.section
-      className="Skills-sections relative h-screen overflow-hidden my-12 md:my-24 "
+      className="Skills-sections relative h-screen overflow-y-hidden my-12 md:my-24 "
       id="skills"
       ref={ref}
       variants={boxVariant}

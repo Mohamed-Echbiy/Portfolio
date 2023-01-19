@@ -63,16 +63,16 @@ export default function Form() {
   }
   return (
     <section
-      className="flex flex-col-reverse md:flex-row justify-center items-center w-full "
+      className="flex flex-col-reverse md:flex-row justify-center items-center w-full mb-6"
       id="contact"
     >
-      <div className="image-container max-w-lg w-1/2">
+      <div className="image-container max-w-lg w-1/2 hidden md:block">
         <img
           src="./form-image.png"
           alt="person holding a laptop and he looks like a developer"
         />
       </div>
-      <FormControl className="md:w-1/2 w-64 flex flex-col gap-12 justify-center max-w-xl">
+      <FormControl className="md:w-1/2 w-full px-8 md:px-0 flex flex-col gap-12 justify-center max-w-xl">
         {showAlert && (
           <Alert severity={isError === "success" ? "success" : "error"}>
             {errorMessage}
@@ -82,7 +82,7 @@ export default function Form() {
           variant="outlined"
           label="email"
           fullWidth
-          className="textInput bg-white"
+          className="textInput bg-white "
           color="success"
           name="email"
           onChange={handelchange}
@@ -93,7 +93,7 @@ export default function Form() {
           minRows={5}
           size="lg"
           placeholder="type here :)"
-          className="w-full"
+          className="w-full drop-shadow-lg block"
           name="message"
           onChange={handelchange}
           value={formData.message}

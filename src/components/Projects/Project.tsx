@@ -77,20 +77,20 @@ export default function Project({
           href={websiteLink}
           target="_blank"
           title={`go to ${title}`}
-          className="flex gap-1 max-w-7xl mx-auto px-4 drop-shadow-2xl"
+          className="flex gap-1 md:gap-2 max-w-7xl mx-auto px-4 "
         >
           <div className="w-2/5 min-h-full max-h-image-sm md:max-h-fit flex-grow">
             <img
               src={image1}
               alt="project image"
-              className=" w-full h-full  rounded"
+              className=" w-full h-full block rounded-md drop-shadow-xl"
             />
           </div>
           <div className="w-2/5 min-h-full max-h-image-sm md:max-h-fit flex-grow">
             <img
               src={image2}
               alt="project image"
-              className="w-full h-full  rounded"
+              className="w-full h-full block rounded-md drop-shadow-xl"
             />
           </div>
         </a>
