@@ -82,7 +82,7 @@ export default function Form() {
           variant="outlined"
           label="email"
           fullWidth
-          className="textInput bg-white "
+          className="textInput bg-white"
           color="success"
           name="email"
           onChange={handelchange}
